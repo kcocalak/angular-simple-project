@@ -1,0 +1,21 @@
+<mat-dialog-content>
+  <div>Id: <input type="number" step="1" placeholder="Just number"> </div>
+  <div>Name: <input type="text" name="selectedUser.name" placeholder="Enter name"></div>
+  <p>Properties:</p>
+  <div>rootAddress: <input type="text"placeholder="Ex: 0.0.0.0:17300"> </div>
+  <div>backPressureSize: <input type="text"placeholder="Just number"> </div>
+  <div>postUri: <input type="text"placeholder="Ex: trnsRest"> </div>
+  <div>checkInterval: <input type="text"placeholder="Just true or false"> </div>
+  <div>timeOut: <input type="text"placeholder="Just number"> </div>
+  <div>failoverDestination: <input type="text"placeholder="Ex: trnsRest"> </div>
+  <div>autoReverseOnError: <input type="text"placeholder="Just ture or false"> </div>
+  <div>responseHeaders: <input type="text"placeholder="Ex: Content-Type=application/json"> </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancel</button>
+
+  <button mat-button [mat-dialog-close]="true" type="submit">Save</button>
+
+
+</mat-dialog-actions>

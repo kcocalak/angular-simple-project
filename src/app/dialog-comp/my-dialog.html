@@ -1,0 +1,20 @@
+<mat-dialog-content>
+  <div>Id: <input type="text"> </div>
+  <div>Name: <input name="first" ngModel type="text"></div>
+  <div>Type: <input type="text"> </div>
+  <p>Properties:</p>
+  <div>rootAddress: <input type="text"> </div>
+  <div>backPressureSize: <input type="text"> </div>
+  <div>postUri: <input type="text"> </div>
+  <div>checkInterval: <input type="text"> </div>
+  <div>timeOut: <input type="text"> </div>
+  <div>failoverDestination: <input type="text"> </div>
+  <div>autoReverseOnError: <input type="text"> </div>
+  <div>responseHeaders: <input type="text"> </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancel</button>
+
+  <button mat-button [mat-dialog-close]="true">Save</button>
+</mat-dialog-actions>

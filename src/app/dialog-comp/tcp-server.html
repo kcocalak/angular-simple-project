@@ -1,0 +1,22 @@
+<mat-dialog-content>
+  <div>Id: <input type="text"> </div>
+  <div>Name: <input name="first" ngModel type="text"></div>
+  <div>Type: <input type="text"> </div>
+  <p>Properties:</p>
+  <div>sourcePort: <input type="text"> </div>
+  <div>destinationPort: <input type="text"> </div>
+  <div>sequenceNumber: <input type="text"> </div>
+  <div>acknowledgmentNumber: <input type="text"> </div>
+  <div>tcpHeaderLenght: <input type="text"> </div>
+  <div>windowSize: <input type="text"> </div>
+  <div>checkSum: <input type="text"> </div>
+  <div>urgentPointer: <input type="text"> </div>
+  <div>options: <input type="text"> </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancel</button>
+
+  <button mat-button [mat-dialog-close]="true">Save</button>
+</mat-dialog-actions>

@@ -1,0 +1,27 @@
+
+<!-- <mat-card class="card" *ngFor="let user of users" (click)="openDialog(user.id)">{{user.name}}</mat-card> -->
+<div cdkDropListGroup>
+<div class="example-container">
+  <h2>Server Types</h2>
+  <div
+    cdkDropList
+    #todoList="cdkDropList"
+    [cdkDropListData]="users"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div class="card" *ngFor="let user of users" cdkDrag [cdkDragDisabled]="visible">{{user.name}} </div>
+  </div>
+</div>
+
+<div class="example-container">
+  <h2>Details</h2>
+  <div
+    cdkDropList
+    #doneList="cdkDropList"
+    [cdkDropListData]="details"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div class="card" *ngFor="let detail of details" cdkDrag (click)="openDialog(detail.id)">{{detail.name}}</div>
+  </div>
+</div>
+</div>
